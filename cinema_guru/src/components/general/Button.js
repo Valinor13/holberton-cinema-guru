@@ -4,7 +4,7 @@ import React from 'react';
 function Button({ label, className, onClick, icon }) {
   return (
     <button className={className} onClick={onClick()}>
-      {icon}
+      {icon ? icon : null}
       {label}
     </button>
   );

@@ -10,21 +10,19 @@ function Input({
   icon,
   inputAttributes,
 }) {
-  function handleInput(e) {
-    setValue(e.target.value);
-  }
+  // function handleInput(e) {
+  //   setValue(e.target.value);
+  // }
   return (
     <label>
-      <div>
         {inputAttributes ? inputAttributes : null}
         {icon ? icon : null}
         {label}
-      </div>
       <input
         type={type}
         className={className}
         value={value}
-        onChange={handleInput()}
+        // onChange={handleInput()}
       />
     </label>
   );

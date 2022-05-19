@@ -5,7 +5,14 @@ import Button from '../general/Button';
 import './authentication.css';
 
 function Authentication() {
-  const { registered, handleRegister } = useContext(AuthContext);
+  const {
+    registered,
+    handleRegister,
+    usernameValue,
+    setUsernameValue,
+    passwordValue,
+    setPasswordValue,
+  } = useContext(AuthContext);
   return (
     <div className="authenticationPage">
       <div className="entryContainer">
@@ -43,15 +50,15 @@ function Authentication() {
             type="text"
             label="Username:"
             className="entryInput"
-            value=""
-            setValue={() => {}}
+            value={usernameValue}
+            setValue={setUsernameValue}
           />
           <Input
-            type="text"
+            type="password"
             label="Password:"
             className="entryInput"
-            value=""
-            setValue={() => {}}
+            value={passwordValue}
+            setValue={setPasswordValue}
           />
           {registered ? (
             <Button

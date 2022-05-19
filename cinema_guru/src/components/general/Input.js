@@ -10,9 +10,6 @@ function Input({
   icon,
   inputAttributes,
 }) {
-  // function handleInput(e) {
-  //   setValue(e.target.value);
-  // }
   return (
     <label>
         {inputAttributes ? inputAttributes : null}
@@ -22,7 +19,7 @@ function Input({
         type={type}
         className={className}
         value={value}
-        // onChange={handleInput()}
+        onChange={(e) => setValue(e.target.value)}
       />
     </label>
   );

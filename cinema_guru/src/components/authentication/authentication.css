@@ -66,3 +66,7 @@
   margin-left: auto;
   margin-top: 25px;
 }
+
+.entryButton:active {
+  opacity: 0.6;
+}

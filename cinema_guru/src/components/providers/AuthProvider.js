@@ -4,7 +4,6 @@ const AuthContext = React.createContext();
 
 function AuthProvider({ children }) {
   const [registered, Register] = useState(true);
-  const [usernameValue, setUsernameValue] = useState('');
   const [passwordValue, setPasswordValue] = useState('');
 
   function handleRegister(isRegistered) {
@@ -16,8 +15,6 @@ function AuthProvider({ children }) {
       value={{
         registered,
         handleRegister,
-        usernameValue,
-        setUsernameValue,
         passwordValue,
         setPasswordValue,
       }}

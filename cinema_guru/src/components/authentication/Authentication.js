@@ -1,18 +1,17 @@
 import React, { useContext } from 'react';
 import { AuthContext } from '../providers/AuthProvider';
+import { UserContext } from '../providers/UserProvider';
 import Input from '../general/Input';
 import Button from '../general/Button';
 import './authentication.css';
 
 function Authentication() {
-  const {
-    registered,
-    handleRegister,
-    usernameValue,
-    setUsernameValue,
-    passwordValue,
-    setPasswordValue,
-  } = useContext(AuthContext);
+  const { registered, handleRegister, passwordValue, setPasswordValue } =
+    useContext(AuthContext);
+
+  const { setIsLoggedIn, usernameValue, setUsernameValue } =
+    useContext(UserContext);
+
   return (
     <div className="authenticationPage">
       <div className="entryContainer">
@@ -63,7 +62,7 @@ function Authentication() {
           {registered ? (
             <Button
               label="Sign In"
-              onClick={() => {}}
+              onClick={() => setIsLoggedIn(true)}
               className="entryButton"
             />
           ) : (

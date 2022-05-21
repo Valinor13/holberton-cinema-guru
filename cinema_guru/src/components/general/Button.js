@@ -3,7 +3,11 @@ import React from 'react';
 
 function Button({ label, className, onClick, icon }) {
   return (
-    <button className={className} onClick={onClick}>
+    <button
+      style={{ cursor: 'pointer' }}
+      className={className}
+      onClick={onClick}
+    >
       {icon ? icon : null}
       {label}
     </button>

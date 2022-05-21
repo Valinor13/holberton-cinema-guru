@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { UserContext } from '../providers/UserProvider';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faArrowRightFromBracket} from '@fortawesome/free-solid-svg-icons';
+import { faArrowRightFromBracket } from '@fortawesome/free-solid-svg-icons';
 import './navigation.css';
 
 function Header() {
@@ -25,7 +25,10 @@ function Header() {
           />
         </div>
         <p>{`Welcome, ${usernameValue}!`}</p>
-        <p style={{ color: '#BB000E' }} onClick={() => setIsLoggedIn(false)}>
+        <p
+          style={{ cursor: 'pointer', color: '#BB000E' }}
+          onClick={() => setIsLoggedIn(false)}
+        >
           <FontAwesomeIcon icon={faArrowRightFromBracket} /> Logout
         </p>
       </div>

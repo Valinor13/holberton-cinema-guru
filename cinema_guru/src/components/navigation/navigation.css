@@ -22,14 +22,28 @@
   margin-bottom: auto;
 }
 
-.sidebar {
+.sidebarNarrow {
+  position: absolute;
+  padding-top: 21px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(25, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   width: 50px;
-  background-color: #BB000E;
+  background-color: #bb000e;
+}
+
+.sidebarExpanded {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(25, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  width: 218px;
+  background-color: #bb000e;
+  color: white;
 }
 
 .icon0 {
@@ -44,16 +58,29 @@
 
 .sidebarIcon {
   color: white;
-  margin: auto;
+  margin-left: 16px;
   padding-top: 14px;
   width: 16px;
   cursor: pointer;
 }
 
 .activePage {
-  background-color: #E31C25;
+  background-color: #e31c25;
 }
 
 .ghostIcon {
-  height: 49px;
+  height: 48px;
+}
+
+.closeSidebar {
+  text-align: right;
+  color: white;
+  margin: 0;
+  width: 218px;
+  background-color: #bb000e;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
 }

@@ -1,13 +1,13 @@
 import React from 'react';
 import './components.css';
 
-function Activity() {
+function Activity({ username, title, date}) {
   return (
     <li>
       <p>
-        <span className="redText">{'API Name'} </span>added{' '}
-        <span className="redText">{'API Movie Title'} </span>to watch later -{' '}
-        {'date'}
+        <span className="redText">{username} </span>added{' '}
+        <span className="redText">{title} </span>to watch later -{' '}
+        {date}
       </p>
     </li>
   );

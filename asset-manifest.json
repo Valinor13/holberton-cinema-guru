@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/holbertonschool-cinema-guru/static/css/main.2a78b158.css",
+    "main.js": "/holbertonschool-cinema-guru/static/js/main.8864eabe.js",
+    "static/media/movieIcon.png": "/holbertonschool-cinema-guru/static/media/movieIcon.a6d5d14df39e7bb9654c.png",
+    "index.html": "/holbertonschool-cinema-guru/index.html",
+    "main.2a78b158.css.map": "/holbertonschool-cinema-guru/static/css/main.2a78b158.css.map",
+    "main.8864eabe.js.map": "/holbertonschool-cinema-guru/static/js/main.8864eabe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2a78b158.css",
+    "static/js/main.8864eabe.js"
+  ]
+}

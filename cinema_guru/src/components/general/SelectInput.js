@@ -10,7 +10,7 @@ function SelectInput({ label, options, className, value, setValue }) {
       label={label}
       className={className}
       value={value}
-      onChange={handleSelect()}
+      onChange={handleSelect}
     >
       {options.map((option) => (
         <option value={option}>option</option>

@@ -6,7 +6,19 @@ function SearchBar({ title, setTitle }) {
     setTitle(e.target.value);
   }
 
-  return <input title={title} onChange={handleInput()} />;
+  return (
+    <input
+      style={{
+        padding: '5px',
+        borderRadius: '15px',
+        width: '535px',
+        backgroundColor: '#2c2c2c',
+      }}
+      placeholder="Search Movies"
+      title={title}
+      onChange={handleInput}
+    />
+  );
 }
 
 export default SearchBar;

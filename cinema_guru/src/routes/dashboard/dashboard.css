@@ -55,11 +55,15 @@
 }
 
 .allGenreTags {
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 50px;
   display: flex;
   width: 100%;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  width: 35%;
+  width: 25%;
 }

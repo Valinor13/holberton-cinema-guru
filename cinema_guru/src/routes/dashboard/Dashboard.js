@@ -33,6 +33,12 @@ function Dashboard() {
     'title7',
     'title8',
   ];
+
+  function handleColorChange(e) {
+    console.log(e.target.style.backgroundColor);
+    e.target.style.backgroundColor === 'rgb(227, 28, 37)' ? e.target.style.backgroundColor = 'transparent' : e.target.style.backgroundColor = '#E31C25';
+  }
+
   return (
     <div className="dashboard">
       <Header />
@@ -56,6 +62,7 @@ function Dashboard() {
               {allGenreTags.map((tag, index) => (
                 <p
                   key={index}
+                  onClick={(e) => handleColorChange(e)}
                   style={{
                     border: '1px solid #e31c25',
                     borderRadius: '15px',
@@ -65,7 +72,8 @@ function Dashboard() {
                     paddingBottom: '2px',
                     paddingLeft: '8px',
                     paddingRight: '8px',
-                    height: '22px'
+                    height: '22px',
+                    cursor: 'pointer'
                   }}
                 >
                   {tag}

@@ -19,7 +19,7 @@ function App() {
         <NavigationProvider>
           <Router>
             <Routes>
-              <Route path="/" element={<Dashboard />} />
+              <Route exact path="/" element={<Dashboard />} />
               <Route path="/favorites" element={<Favorites />} />
               <Route path="/watchLater" element={<WatchLater />} />
             </Routes>

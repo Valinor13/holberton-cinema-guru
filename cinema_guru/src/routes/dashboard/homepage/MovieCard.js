@@ -26,9 +26,10 @@ function MovieCard({ title, info, genres }) {
         >
           <h2
             style={{
-              marginTop: '90%',
+              marginTop: '80%',
               marginBottom: '0',
               color: 'white',
+              padding: '5px',
             }}
           >
             {title ? title : 'Move Title'}
@@ -37,6 +38,7 @@ function MovieCard({ title, info, genres }) {
       </div>
       <p
         style={{
+          minHeight: '70px',
           padding: '5px',
           color: 'white',
           width: '100%',
